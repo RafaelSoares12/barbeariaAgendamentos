@@ -1,5 +1,6 @@
 from django.db import models
-from agendamentos.models import Cliente, Barbearia, Servico
+from agendamentos.models import Cliente, Barbearia
+from agendamentos.models.Servico import Servico
 
 class Reserva(models.Model):
     cliente = models.ForeignKey(Cliente, on_delete=models.CASCADE)
