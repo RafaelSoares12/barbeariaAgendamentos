@@ -5,4 +5,3 @@ class Barbearia(models.Model):
     endereco = models.CharField(max_length=200)
     telefone = models.CharField(max_length=20)
     horario_funcionamento = models.CharField(max_length=100)
-    cadeiras_disponiveis = models.IntegerField()
